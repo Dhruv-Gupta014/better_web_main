@@ -55,6 +55,10 @@ Natural language chatbot to guide users, trigger features, or explain tools—al
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
+- [Features Explained](#features-explained)
+- [Security](#-security)
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
 
 ---
 
@@ -71,14 +75,29 @@ git clone https://github.com/Dhruv-Gupta014/better_web_main.git
 cd better_web-main
 ```
 
-### Step 2: Install Python Dependencies (For AI Agent)
+### Step 2: Setup Environment Variables
+
+**IMPORTANT:** Never commit API keys to git. Use environment variables instead.
+
+```bash
+# Copy the example file
+cp .env.example .env
+
+# Edit .env and add your API keys
+# - Get GEMINI_API_KEY from Google Cloud Console
+# - Get GOOGLE_API_KEY from Google Cloud Console
+```
+
+See [SECURITY.md](SECURITY.md) for detailed instructions on obtaining and configuring API keys.
+
+### Step 3: Install Python Dependencies (For AI Agent)
 ```bash
 pip install -r requirements.txt
 ```
 
 If `requirements.txt` doesn't exist, manually install:
 ```bash
-pip install flask flask-cors python-dotenv
+pip install flask flask-cors python-dotenv streamlit langchain-google-genai
 ```
 
 ---
@@ -299,7 +318,29 @@ Auto-adaptive UI based on a user’s profile, offering inclusive course delivery
 
 ---
 
-## 🐛 Troubleshooting
+## � Security
+
+**⚠️ IMPORTANT:** This project contained exposed API keys that have been removed. **Do NOT use the old keys in git history.**
+
+### Protecting Your Credentials
+
+1. **Never commit API keys** to git - use environment variables instead
+2. **Always use `.env` files** for sensitive configuration
+3. **Keep `.env` in `.gitignore`** (it's already configured)
+4. **Check [SECURITY.md](SECURITY.md)** for detailed security guidelines
+
+### Quick Setup
+
+```bash
+cp .env.example .env
+# Edit .env and add your actual API keys from Google Cloud
+```
+
+For complete instructions on obtaining API keys and securing your application, see [SECURITY.md](SECURITY.md).
+
+---
+
+## �🐛 Troubleshooting
 
 ### Extension not loading?
 - Ensure you're using the latest Chrome version
