@@ -118,10 +118,14 @@ async def main():
     # --- End Argument Parsing ---
 
     # Initialize the Gemini model
+    # Make sure to set GEMINI_API_KEY environment variable
+    gemini_api_key = os.getenv("GEMINI_API_KEY")
+    if not gemini_api_key:
+        raise ValueError("GEMINI_API_KEY environment variable is not set. Please set it in your .env file.")
+    
     llm = ChatGoogleGenerativeAI(
         model=args.model,
-        #api_key=SecretStr(os.getenv("GEMINI_API_KEY")),
-        api_key="AIzaSyAXzmHm2OTvvjtUmDyQNy-tgDlslaxbOEo"
+        api_key=SecretStr(gemini_api_key)
     )
 
     # Setup browser

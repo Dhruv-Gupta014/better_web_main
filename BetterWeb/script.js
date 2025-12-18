@@ -1,4 +1,10 @@
-const API_KEY = "AIzaSyCsA7wL-Xusb21c8oS37CQ9FpwlSGtQf_k";
+// API_KEY should be set from backend or environment
+// DO NOT hardcode API keys in frontend code
+const API_KEY = window.API_KEY || "";
+
+if (!API_KEY) {
+  console.warn("API_KEY not configured. Please set it in your backend or environment.");
+}
 
 const openBtn = document.getElementById("open-btn");
 const closeBtn = document.getElementById("close-btn");
