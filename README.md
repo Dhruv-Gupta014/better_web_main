@@ -286,23 +286,75 @@ Auto-adaptive UI based on a user’s profile, offering inclusive course delivery
 
 ---
 
-##  Future Plans
+---
+
+## 🔮 Future Plans
+
 - Full generative color-enhancement
 - Real-time accessibility audit engine
 - Cloud-based syncing across devices
 - More granular accessibility triggers
-
-
-
+- Learning platform with auto-adaptive UI
+- Mobile app version
 
 ---
 
-## 👥 Team
-- **Shaurya Tyagi**
-- **Kavya kapoor**
-- **Lakshya Gupta**
+## 🐛 Troubleshooting
 
+### Extension not loading?
+- Ensure you're using the latest Chrome version
+- Check that Developer Mode is enabled
+- Try clicking "Reload" on the extension card
+- Clear cache and reload the page
 
-#   b e t t e r _ w e b _ m a i n 
+### Text-to-Speech not working?
+- Check browser audio settings
+- Ensure Google TTS API is configured
+- Try reloading the extension
+- Check browser console for errors (F12)
+
+### AI Agent not responding?
+- Verify Python dependencies are installed
+- Check that `main.py` is running
+- Look for error messages in browser console (F12)
+- Verify Python version is 3.8 or higher
+
+### Settings not saving?
+- Check browser storage permissions
+- Clear browser cache and cookies
+- Try reloading the extension
+
+---
+
+## 📝 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to:
+- Submit issues and bug reports
+- Create pull requests with improvements
+- Suggest new features and accessibility enhancements
+- Help with documentation
+
+---
+
+## 📧 Support
+
+For issues, questions, or suggestions:
+- Open an issue on [GitHub](https://github.com/Dhruv-Gupta014/better_web_main/issues)
+- Contact the development team
+- Check existing documentation
+
+---
+
+## 🙏 Acknowledgments
+
+This project aims to make the web more accessible for everyone. We appreciate feedback and contributions from the accessibility community.
+
+**Built with ❤️ for accessibility**
  
  
